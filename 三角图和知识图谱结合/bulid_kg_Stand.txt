@@ -1,0 +1,168 @@
+//创建stand结点
+//导入节点 总石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///stand.csv" AS line
+MERGE (p:Stone{sid:toInteger(line.sid),name:line.sname,definition:line.sdefinition,references:line.sreferences})
+return p
+
+//导入节点 一级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///standson.csv" AS line
+MERGE (p:StandStone{ssid:toInteger(line.ssid),name:line.ssname,definition:line.ssdefinition,references:line.ssreferences})
+return p
+
+// 导入关系 is_part  Stonestone被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///stand_to_standson.csv" AS line
+match (from:Stone{sid:toInteger(line.sid)}),(to:StandStone{ssid:toInteger(line.ssid)})
+merge (from)-[r:is_part{sid:toInteger(line.sid),ssid:toInteger(line.ssid),rule:(line.rule),references:line.references}]->(to)
+
+#导入节点 二级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///arenite.csv" AS line
+MERGE (p:Arenite{aid:toInteger(line.aid),name:line.aname,definition:line.adefinition,references:line.areferences})
+return p
+
+// 导入关系 is_part  Stonestone被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///stondson_to_arenite.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:Arenite{aid:toInteger(line.aid)})
+merge (from)-[r:is_classification{ssid:toInteger(line.ssid),aid:toInteger(line.aid)}]->(to)
+
+// 1
+//导入节点 三级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///classfion.csv" AS line
+MERGE (p:classfion{cid:toInteger(line.cid),name:line.cname})
+return p
+
+// 导入关系 concept_rule  Arenite被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///arenite_to_classfion.csv" AS line
+match (from:Arenite{aid:toInteger(line.aid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:concept_rule{aid:toInteger(line.aid),cid:toInteger(line.cid),rule:line.rule,references:line.references}]->(to)
+
+// 导入关系 concept_rule  Wackes被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///standson_to_classfion.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:concept_rule{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,references:line.references}]->(to)
+
+=============================================================================================================================================
+//创建stand结点
+//导入节点 总石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///stand.csv" AS line
+MERGE (p:Stone{sid:toInteger(line.sid),name:line.sname,definition:line.sdefinition,references:line.sreferences})
+return p
+
+//导入节点 一级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///standson.csv" AS line
+MERGE (p:StandStone{ssid:toInteger(line.ssid),name:line.ssname,definition:line.ssdefinition,references:line.ssreferences})
+return p
+
+// 导入关系 is_part  Stonestone被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///stand_to_standson.csv" AS line
+match (from:Stone{sid:toInteger(line.sid)}),(to:StandStone{ssid:toInteger(line.ssid)})
+merge (from)-[r:is_part{sid:toInteger(line.sid),ssid:toInteger(line.ssid),rule:(line.rule),references:line.references}]->(to)
+
+//导入节点 二级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///arenite.csv" AS line
+MERGE (p:Arenite{aid:toInteger(line.aid),name:line.aname,definition:line.adefinition,references:line.areferences})
+return p
+
+// 导入关系 is_part  Stonestone被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///stondson_to_arenite.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:Arenite{aid:toInteger(line.aid)})
+merge (from)-[r:is_classification{ssid:toInteger(line.ssid),aid:toInteger(line.aid)}]->(to)
+
+//2
+
+//导入节点 三级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///classfion_1.csv" AS line
+MERGE (p:classfion{cid:toInteger(line.cid),name:line.cname})
+return p
+
+// 导入关系 concept_rule  Arenite被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///arenite_to_classfion_1.csv" AS line
+match (from:Arenite{aid:toInteger(line.aid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:concept_rule{aid:toInteger(line.aid),cid:toInteger(line.cid),rule:line.rule,references:line.references}]->(to)
+
+// 导入关系 concept_rule  Wackes被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///standson_to_classfion_1.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:concept_rule{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,references:line.references}]->(to)
+
+================================================================================================================================================
+//创建stand结点
+//导入节点 总石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test///stand.csv" AS line
+MERGE (p:Stone{sid:toInteger(line.sid),name:line.sname,definition:line.sdefinition,references:line.sreferences})
+return p
+
+//导入节点 二级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test///standclassfion.csv" AS line
+MERGE (p:StandStone{ssid:toInteger(line.ssid),name:line.ssname,definition:line.ssdefinition,references:line.ssreferences})
+return p
+
+// 导入关系 concept_rule  Stonestone被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///test///stand_to_standclassfion.csv" AS line
+match (from:Stone{sid:toInteger(line.sid)}),(to:StandStone{ssid:toInteger(line.ssid)})
+merge (from)-[r:concept_rule{sid:toInteger(line.sid),ssid:toInteger(line.ssid),rule:(line.rule),references:line.references}]->(to)
+
+//导入节点 Pettijohn石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test///pettijohn.csv" AS line
+MERGE (p:Pettijohn{pid:toInteger(line.pid),name:line.pname,definition:line.pdefinition,references:line.preferences})
+return p
+
+// 导入关系 concept_rule  Pettijohn被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///test///standclassfion_to_pettijohn.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:Pettijohn{pid:toInteger(line.pid)})
+merge (from)-[r:concept_rule{ssid:toInteger(line.ssid),pid:toInteger(line.pid),rule:(line.rule),references:line.references}]->(to)
+
+//3
+//导入节点 三级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test///classfion.csv" AS line
+MERGE (p:classfion{cid:toInteger(line.cid),name:line.cname})
+return p
+
+// 导入关系 concept_rule  Stonestone被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///test///standclassfion_to_classfion.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:concept_rule{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,references:line.references}]->(to)
+
+// 导入关系 concept_rule  Pettijohn被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///test///pettijohn_to_classfion.csv" AS line
+match (from:Pettijohn{pid:toInteger(line.pid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:concept_rule{pid:toInteger(line.pid),cid:toInteger(line.cid),rule:line.rule,references:line.references}]->(to)
+
+============================================================================================================================================
+//创建stand结点
+//导入节点 总石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test1///stand.csv" AS line
+MERGE (p:Stone{sid:toInteger(line.sid),name:line.sname,definition:line.sdefinition,references:line.sreferences})
+return p
+
+//导入节点 二级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test1///standclassfion.csv" AS line
+MERGE (p:StandStone{ssid:toInteger(line.ssid),name:line.ssname,definition:line.ssdefinition,references:line.ssreferences})
+return p
+
+//4
+// 导入关系 concept_rule  Stand被分为几种类别的 1对多双规则
+LOAD CSV WITH HEADERS FROM "file:///test1///stand_to_standclassfion.csv" AS line
+match (from:Stone{sid:toInteger(line.sid)}),(to:StandStone{ssid:toInteger(line.ssid)})
+merge (from)-[r:Pettijohn_classification{sid:toInteger(line.sid),ssid:toInteger(line.ssid),rule:(line.rule),references:line.references,classfion:line.classfion,ruleClassfion:line.ruleClassfion,ruleReferences:line.ruleReferences}]->(to)
+//merge (from)-[r:rule{sid:toInteger(line.sid),ssid:toInteger(line.ssid),rule:(line.rule),references:line.references,classfion:line.classfion,ruleClassfion:line.ruleClassfion,ruleReferences:line.ruleReferences}]->(to)
+
+
+//导入节点 三级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///test1///classfion.csv" AS line
+MERGE (p:classfion{cid:toInteger(line.cid),name:line.cname})
+return p
+
+// 导入关系 concept_rule  Stand（wackers/Arenite）下Pettijohn类别被分为几种类别的 1对多
+LOAD CSV WITH HEADERS FROM "file:///test1///standclassfion_to_classfion.csv" AS line
+match (from:StandStone{ssid:toInteger(line.ssid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:Pettijohn_classification{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,references:line.references,classfion:line.classfion}]->(to)
+
+// 导入关系 concept_rule  Stand被分为几种类别的 1对多双规则
+LOAD CSV WITH HEADERS FROM "file:///test1///stand_to_garzanti.csv" AS line
+match (from:Stone{sid:toInteger(line.sid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:Garzanti_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),references:line.references,classfion:line.classfion,ruleClassfion:line.ruleClassfion,classfionReferences:line.classfionReferences}]->(to)
+
+
+LOAD CSV WITH HEADERS FROM "file:///test1///stand_to_folk.csv" AS line
+match (from:Stone{sid:toInteger(line.sid)}),(to:classfion{cid:toInteger(line.cid)})
+merge (from)-[r:Folk_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),references:line.references,classfion:line.classfion,ruleClassfion:line.ruleClassfion,classfionReferences:line.classfionReferences}]->(to)

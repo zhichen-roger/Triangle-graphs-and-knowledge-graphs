@@ -1,0 +1,67 @@
+// 终九种关系联合
+//创建standstone结点
+//导入节点 总石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///newtest///standstone.csv" AS line
+MERGE (p:StandStone{sid:toInteger(line.sid),name:line.sname,definition:line.sdefinition,references:line.sreferences})
+return p
+
+//导入节点 二级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///newtest///standclassfion.csv" AS line
+MERGE (p:StandStoneclassfion{ssid:toInteger(line.ssid),name:line.ssname})
+return p
+
+//5
+// 导入关系 classification  Standstone被二级分类
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_standclassfion.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:StandStoneclassfion{ssid:toInteger(line.ssid)})
+merge (from)-[r:classification{sid:toInteger(line.sid),ssid:toInteger(line.ssid)}]->(to)
+
+//导入节点 三级石头类型 == 注意类型转换
+LOAD CSV WITH HEADERS  FROM "file:///newtest///stone.csv" AS line
+MERGE (p:Stone{cid:toInteger(line.cid),name:line.cname})
+return p
+
+// 导入关系 Garzanti_classification
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_garzanti.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Garzanti_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),references:line.references,classfion:line.classfion,ruleClassfion:line.ruleClassfion,classfionReferences:line.classfionReferences}]->(to)
+
+// 导入关系 Folk_classification
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_folk.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Folk_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),references:line.references,classfion:line.classfion,ruleClassfion:line.ruleClassfion,classfionReferences:line.classfionReferences}]->(to)
+
+// 导入关系 Pettijohn_classification （wackers/Arenite）
+LOAD CSV WITH HEADERS FROM "file:///newtest///standclassfion_to_pettijohn.csv" AS line
+match (from:StandStoneclassfion{ssid:toInteger(line.ssid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Pettijohn_classification{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,references:line.references,classfion:line.classfion}]->(to)
+
+// 导入关系 van andel_classification
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_van_andel.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Van_Andel_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),classfion:line.classfion}]->(to)
+
+// 导入关系 mcbride_classification
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_mcbride.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:mcbride_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),classfion:line.classfion}]->(to)
+
+// 导入关系 gilbert_classification （wackers/Arenite）
+LOAD CSV WITH HEADERS FROM "file:///newtest///standclassfion_to_gilbert.csv" AS line
+match (from:StandStoneclassfion{ssid:toInteger(line.ssid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Gilbert_classification{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,classfion:line.classfion}]->(to)
+
+// 导入关系 crook_classification
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_crook.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Crook_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),classfion:line.classfion}]->(to)
+
+// 导入关系 Dott_classification （wackers/Arenite）
+LOAD CSV WITH HEADERS FROM "file:///newtest///standclassfion_to_dott.csv" AS line
+match (from:StandStoneclassfion{ssid:toInteger(line.ssid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Dott_classification{ssid:toInteger(line.ssid),cid:toInteger(line.cid),rule:line.rule,classfion:line.classfion}]->(to)
+
+// 导入关系 dapples_classification
+LOAD CSV WITH HEADERS FROM "file:///newtest///standstone_to_dapples.csv" AS line
+match (from:StandStone{sid:toInteger(line.sid)}),(to:Stone{cid:toInteger(line.cid)})
+merge (from)-[r:Dapples_classification{sid:toInteger(line.sid),cid:toInteger(line.cid),rule:(line.rule),classfion:line.classfion}]->(to)
