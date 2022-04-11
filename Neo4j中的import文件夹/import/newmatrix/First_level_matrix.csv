@@ -1,0 +1,5 @@
+fmid,fmname,fmdefinition,fmreferences
+401,Orthomatrix,"Recrystallized detrital clay or protomatrix, recognized by relict detrital textures and inhomogeneity, in contrast to the homogeneity of clay cements.","Dickinson W R. Interpreting detrital modes of graywacke and arkose[J]. Journal of Sedimentary Research, 1970, 40(2): 695-707."
+402,Epimatrix,Authigenic interstitial materials grown in originally open interstices but lacking the homogeneity of clay cements.,"Dickinson W R. Interpreting detrital modes of graywacke and arkose. Journal of Sedimentary Research, 1970, 40(2): 695-707."
+403,Pseudomatrix,"Discontinuous matrix-like material formed by squeezing and flowing of weak detrital grains, such as shale or phyllite fragments, into adjacent pore spaces.","Dickinson W R. Interpreting detrital modes of graywacke and arkose. Journal of Sedimentary Research, 1970, 40(2): 695-707."
+404,Protomatrix,"Unrecrystallized, detrital clay in weakly consolidated rocks.","Dickinson W R. Interpreting detrital modes of graywacke and arkose[J]. Journal of Sedimentary Research, 1970, 40(2): 695-707."

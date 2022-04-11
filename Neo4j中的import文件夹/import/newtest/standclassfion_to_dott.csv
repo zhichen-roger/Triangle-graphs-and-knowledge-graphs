@@ -1,0 +1,7 @@
+ssid,cid,rule,classfion
+2,35,Matrix > 10% and Q > 90%,Dott's classification
+2,34,Matrix > 10% and L > 10% and L > F,Dott's classification
+2,33,Matrix > 10% and F > 10% and F > L,Dott's classification
+1,20,Matrix < 10% and Q > 90%,Dott's classification
+1,29,Matrix < 10% and L > 10% and L > F,Dott's classification
+1,63,Matrix < 10% and F > 10% and F > L,Dott's classification

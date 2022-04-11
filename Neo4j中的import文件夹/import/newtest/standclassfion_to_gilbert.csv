@@ -1,0 +1,17 @@
+ssid,cid,rule,classfion
+2,35,F < 10% and L < 10%,Gilbert's classification
+2,33,10% < F < 25% and F > L,Gilbert's classification
+2,55,10% < L < 45% and F < 10%,Gilbert's classification
+2,21,25% < F < 70% and L < 10%,Gilbert's classification
+2,57,F > 70% and L > 10%,Gilbert's classification
+2,57,L > 10% and L > 25% and F > L,Gilbert's classification
+2,34,L > 45% and L < 10%,Gilbert's classification
+2,34,F > 10% and F > L,Gilbert's classification
+1,20,Matrix < 10%,Gilbert's classification
+1,63,Matrix < 10%,Gilbert's classification
+1,64,Matrix < 10%,Gilbert's classification
+1,21,Matrix < 10%,Gilbert's classification
+1,32,Matrix < 10%,Gilbert's classification
+1,32,Matrix < 10%,Gilbert's classification
+1,29,Matrix < 10%,Gilbert's classification
+1,29,Matrix < 10%,Gilbert's classification

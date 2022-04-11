@@ -1,0 +1,9 @@
+sid,cid,rule,classfion
+100,43,L < 5% and F < 5%,Mcbride's classification
+100,23,5% < F < 25% and L <10% and F > L,Mcbride's classification
+100,24,5% < L < 25% and F < 10% and L > F,Mcbride's classification
+100,46,10% < L < 25% and 10% < F <25%,Mcbride's classification
+100,21,F > 25% and L < 10%,Mcbride's classification
+100,22,L > 25% F< 10%,Mcbride's classification
+100,25,L > 10% and F > 25% and F > L,Mcbride's classification
+100,26,L > 25% and F > 10% and L > F,Mcbride's classification

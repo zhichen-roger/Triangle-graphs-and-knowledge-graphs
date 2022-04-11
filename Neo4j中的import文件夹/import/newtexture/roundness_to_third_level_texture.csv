@@ -1,0 +1,7 @@
+stid,ttid,rule,classfion
+205,44,Roundness (Rw) = sum(r/R)/N > 0.12 and Roundness (Rw) = sum(r/R)/N < 0.17,Roundness
+205,45,Roundness (Rw) = sum(r/R)/N > 0.17 and Roundness (Rw) = sum(r/R)/N < 0.25,Roundness
+205,46,Roundness (Rw) = sum(r/R)/N > 0.25 and Roundness (Rw) = sum(r/R)/N < 0.35,Roundness
+205,47,Roundness (Rw) = sum(r/R)/N > 0.35 and Roundness (Rw) = sum(r/R)/N < 0.49,Roundness
+205,48,Roundness (Rw) = sum(r/R)/N > 0.49 and Roundness (Rw) = sum(r/R)/N < 0.7,Roundness
+205,49,Roundness (Rw) = sum(r/R)/N > 0.17 and Roundness (Rw) = sum(r/R)/N < 0.25,Roundness

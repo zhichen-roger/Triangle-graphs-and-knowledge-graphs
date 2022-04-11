@@ -1,0 +1,8 @@
+stid,ttid,rule,classfion
+207,56,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) < 0.35,Sorting
+207,57,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) between 0.35 to 0.5.,Sorting
+207,58,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) > 0.5 and Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) < 0.7,Sorting
+207,59,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) > 0.7 and Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) < 1.0,Sorting
+207,60,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) > 1.0 and Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) < 2.0,Sorting
+207,61,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) > 2.0 and Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) < 4.0,Sorting
+207,62,Phi standard deviation (Phi=(Phi84-Phi16)/4+(Phi95-Phi5)/6.6) > 4.0,Sorting

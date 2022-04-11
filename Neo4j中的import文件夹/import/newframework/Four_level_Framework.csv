@@ -1,0 +1,31 @@
+fofgid,fofgname,fofgdefinition,fofgreferences
+739,Sandstone/Siltstone fragment,The rock fragment with sandstone/siltstone composition and fabric,DDE
+740,Argillite fragment,The rock fragment with argillite composition and fabric,DDE
+741,Carbonate fragment,The rock fragment with argillite composition and fabric,DDE
+742,Evaporite fragment,The rock fragment with argillite composition and fabric,DDE
+743,Chert,The rock fragment with argillite composition and fabric,DDE
+744,Metapelite,Metamorphic parent rock is lithic fragment of argillaceous rock.,"Garzanti, Eduardo, and Giovanni Vezzoli. ""A classification of metamorphic grains in sands based on their composition and grade."" Journal of Sedimentary Research 73.5 (2003): 830-837."
+745,Metapsammite/Metafelsite,Metamorphic parent rock is lithic fragment of sandstone/siltstone rock.,"Garzanti, Eduardo, and Giovanni Vezzoli. ""A classification of metamorphic grains in sands based on their composition and grade."" Journal of Sedimentary Research 73.5 (2003): 830-837."
+746,Metamorphic carbonate rock,Metamorphic parent rock is lithic fragment of carbonate rock.,"Garzanti, Eduardo, and Giovanni Vezzoli. ""A classification of metamorphic grains in sands based on their composition and grade."" Journal of Sedimentary Research 73.5 (2003): 830-837."
+747,Metabasite,Metamorphic parent rock is lithic fragment of basic rock.,"Garzanti, Eduardo, and Giovanni Vezzoli. ""A classification of metamorphic grains in sands based on their composition and grade."" Journal of Sedimentary Research 73.5 (2003): 830-837."
+748,Zircon,Invoke from the basic knowledge database.,DDE
+749,Tourmaline,Invoke from the basic knowledge database.,DDE
+750,Rutile,Invoke from the basic knowledge database.,DDE
+751,Amphiboles,Invoke from the basic knowledge database.,DDE
+752,Pyroxene,Invoke from the basic knowledge database.,DDE
+753,Chlorite,Invoke from the basic knowledge database.,DDE
+754,Garnet,Invoke from the basic knowledge database.,DDE
+755,Apatite,Invoke from the basic knowledge database.,DDE
+756,Staurolite,Invoke from the basic knowledge database.,DDE
+757,Epidote,Invoke from the basic knowledge database.,DDE
+758,Olivine,Invoke from the basic knowledge database.,DDE
+759,Titanite,Invoke from the basic knowledge database.,DDE
+760,Zoisite,Invoke from the basic knowledge database.,DDE
+761,Clinozoisite,Invoke from the basic knowledge database.,DDE
+762,Topaz,Invoke from the basic knowledge database.,DDE
+763,Monazite,Invoke from the basic knowledge database.,DDE
+764,Hematite,Invoke from the basic knowledge database.,DDE
+765,Limonite,Invoke from the basic knowledge database.,DDE
+766,Magnetite,Invoke from the basic knowledge database.,DDE
+767,Ilmenite,Invoke from the basic knowledge database.,DDE
+768,Leucoxene,Invoke from the basic knowledge database.,DDE

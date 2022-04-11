@@ -1,0 +1,6 @@
+stid,ttid,rule,classfion
+208,215,"""Point"" contact between grains",Contact style 
+208,216,"""Line"" contact between grains.",Contact style 
+208,217,"""Concave convex"" contact between grains.",Contact style 
+208,218,Stitched contact between grains,Contact style 
+208,219,Sand and sandstone,Contact style 

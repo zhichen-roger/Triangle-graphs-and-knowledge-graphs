@@ -1,0 +1,7 @@
+sfgid,sfgname,sfgdefinition,sfgreferences
+703,Noncarbonate grain,"It is composed of chlorite, gypsum, iron oxide, phosphate and other non carbonate minerals",DDE
+704,Cabonate grain,Invoke from the ¡°carbonate¡± basic knowledge database,DDE
+705,Feldspar grain,Invoke from the basic knowledge database.,DDE
+706,Quartz grain,Invoke from the basic knowledge database.,DDE
+707,Rock fragment,Rock fragments are detrital particles made up of two or more mineral grains.,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks[M]. Cambridge university press, 2009."
+708,Heavy mineral grain,Most of these minerals have specific gravities that exceed 2.85 and are thus called heavy minerals.,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks[M]. Cambridge university press, 2009."

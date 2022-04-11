@@ -1,0 +1,4 @@
+ftid,ftname,ftdefinition,ftreferences
+201,Grain texture,"Including particle size, sorting, roundness and other characteristics. ",DDE
+202,Pore fabric,Porosity is defined as the ratio of pore space in a sediment or sedimentary rock to the total volume of the rock.,"Boggs S. Petrology of sedimentary rocks. Cambridge University Press, 2009"
+203,Texture of cement ,Texture of cement,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks[M]. Cambridge University Press, 2009."

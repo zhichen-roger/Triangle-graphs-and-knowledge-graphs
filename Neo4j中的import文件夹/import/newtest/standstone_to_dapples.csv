@@ -1,0 +1,6 @@
+sid,cid,rule,classfion
+100,4,Q > 95%,Dapples's classification
+100,5,5% < F < 25% and L < 5%,Dapples's classification
+100,90,5% < L < 25% and F < 25%,Dapples's classification
+100,21,F > 25% and L < 25%,Dapples's classification
+100,41,L > 25%,Dapples's classification

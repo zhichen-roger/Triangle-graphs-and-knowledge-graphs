@@ -1,0 +1,20 @@
+tfgid,tfgname,tfgdefinition,tfgreferences
+709,Glauconite grain,Invoke from the basic knowledge database.,DDE
+710,Gypsum grain,Invoke from the basic knowledge database.,DDE
+711,Iron oxides grain,Invoke from the basic knowledge database.,DDE
+712,Phosphate grain,Invoke from the basic knowledge database.,DDE
+713,Intraclasts grain,Invoke from the ¡°carbonate¡± basic knowledge database.,DDE
+714,Oolites grain,Invoke from the ¡°carbonate¡± basic knowledge database.,DDE
+715,Fossils grain,Invoke from the ¡°carbonate¡± basic knowledge database.,DDE
+716,Peloids grain,Invoke from the ¡°carbonate¡± basic knowledge database.,DDE
+717,Alkali feldspars grain,Invoke from the basic knowledge database.,DDE
+718,Plagioclase feldspars grain,Invoke from the basic knowledge database.,DDE
+719,Monocrystalline quartz grain,Invoke from the basic knowledge database.,DDE
+720,Polycrystalline quartz grain,"Polycrystalline quartz, also called composite quartz, is quartz made up of aggregates of two or more crystals.","Boggs Jr S, Boggs S. Petrology of sedimentary rocks. Cambridge university press, 2009."
+721,Igneous rock fragment,"Lithic fragment derived from igneous parent rocks, including volcanic and plutonic fragments.","Ulmer-Scholle, Dana S., et al. A color guide to the petrography of sandstones, siltstones, shales and associated rocks. American Association of Petroleum Geologists, 2014."
+722,Sedimentary rock fragment,"Sedimentary rock fragment consist of erosion and transport debris from organisms(chert, carbonates, and coal), chemistry (evaporites and oolitic limestone), or siliceous rocks (sandstones, siltstones, and claystones).","Ulmer-Scholle, Dana S., et al. A color guide to the petrography of sandstones, siltstones, shales and associated rocks. American Association of Petroleum Geologists, 2014."
+723,Metamorphic rock fragment,"Metamorphic lithic fragment include a wide range of particle types from high to low grades, dominated by quartz and layered silicates ( muscovite, biotite and chlorite); a small amount of gneiss fragment and feldspars.","Ulmer-Scholle, Dana S., et al. A color guide to the petrography of sandstones, siltstones, shales and associated rocks. American Association of Petroleum Geologists, 2014."
+724,Stable nonopaque mineral,Nonopaque minerals which have greatest resistance to chemical decomposition.,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks. Cambridge university press, 2009."
+725,Metastable nonopaque mineral,Nonopaque minerals which have weaker resistance to chemical decomposition.,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks. Cambridge university press, 2009."
+726,Stable opaque mineral,Opaque minerals which have greatest resistance to chemical decomposition.,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks. Cambridge university press, 2009"
+727,Metastable opaque mineral,Opaque minerals which have weaker resistance to chemical decomposition.,"Boggs Jr S, Boggs S. Petrology of sedimentary rocks. Cambridge university press, 2009."

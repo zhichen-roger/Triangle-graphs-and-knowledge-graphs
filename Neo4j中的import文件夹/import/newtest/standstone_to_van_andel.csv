@@ -1,0 +1,6 @@
+sid,cid,rule,classfion
+100,4,Q > 95%,van Andel's classification
+100,5,25% > F > 5% and F > L,van Andel's classification
+100,39,25% > L > 5% and L > F,van Andel's classification
+100,21,F > 25% and F > L,van Andel's classification
+100,41,L > 25% and F < L,van Andel's classification

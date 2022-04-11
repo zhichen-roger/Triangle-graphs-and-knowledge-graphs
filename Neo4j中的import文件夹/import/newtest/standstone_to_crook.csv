@@ -1,0 +1,8 @@
+sid,cid,rule,classfion
+100,71,Q > 90%,Crook's classification
+100,72,10% < F < 25% and F > L,Crook's classification
+100,73,10% < L < 25% and L > F,Crook's classification
+100,63,Q < 75% and F > 75%(F+L),Crook's classification
+100,75,Q < 75% and 50%(F+L) < F < 75%(F+L),Crook's classification
+100,76,Q < 75% and 50%(F+L) < L < 75%(F+L),Crook's classification
+100,29,Q < 75% and L > 75%(F+L),Crook's classification

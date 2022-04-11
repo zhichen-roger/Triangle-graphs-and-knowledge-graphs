@@ -1,0 +1,6 @@
+stid,ttid,rule,classfion
+204,38,Particle size < 2mm and Particle size > 1mm,size
+204,39,Particle size < 1mm and Particle size > 0.5mm,size
+204,40,Particle size < 0.5mm and Particle size > 0.25mm,size
+204,41,Particle size < 0.25mm and Particle size > 0.125mm,size
+204,42,Particle size < 0.125mm and Particle size > 0.0625mm,size

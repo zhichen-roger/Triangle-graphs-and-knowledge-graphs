@@ -1,0 +1,5 @@
+ftmid,ftmname,ftmdefinition,ftmreferences
+301,Submature stage,"Sediment contains under 5 percent clay, but sand grains are still poorly sorted (sum over 0.5Phi)) and are not well rounded","Folk R L. Petrology of sedimentary rocks. Hemphill Publishing Company, 1980"
+302,Immature stage,Sediment contains over 5 percent terrigenous clay matrix; sand grains usually poorly sorted and angular,"Folk R L. Petrology of sedimentary rocks. Hemphill Publishing Company, 1980"
+303,Mature stage,"Sediment contains little or no clay, and sand grains are well sorted (sum under 0.5Phi), but still not rounded","Folk R L. Petrology of sedimentary rocks. Hemphill Publishing Company, 1980"
+304,Supermature stage,"Sediment contains no clay, sand grains are well sorted and well rounded (Waddell roundness over 0.35; sum over 3.0). This determination should be made, if possible, on quartz grains of medium and fine sand size","Folk R L. Petrology of sedimentary rocks. Hemphill Publishing Company, 1980"

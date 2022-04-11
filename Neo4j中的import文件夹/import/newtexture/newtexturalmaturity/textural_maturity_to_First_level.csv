@@ -1,0 +1,5 @@
+tmid,ftmid,rule,classfion
+300,301,"Sediment contains under 5 percent clay, but sand grains are still poorly sorted (sum over 0.5Phi)) and are not well rounded",Textural maturity
+300,302,Sediment contains over 5 percent terrigenous clay matrix; sand grains usually poorly sorted and angular,Textural maturity
+300,303,"Sediment contains little or no clay, and sand grains are well sorted (sum under 0.5Phi), but still not rounded",Textural maturity
+300,304,"Sediment contains no clay, sand grains are well sorted and well rounded (Waddell roundness over 0.35; sum over 3.0). This determination should be made, if possible, on quartz grains of medium and fine sand size",Textural maturity

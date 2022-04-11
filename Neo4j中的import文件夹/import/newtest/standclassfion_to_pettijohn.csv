@@ -1,0 +1,9 @@
+ssid,cid,rule,references,,classfion
+1,20,lithic < 5% and feldspar < 5%,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+1,29,feldspar < lithic and lithic > 25%,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+1,23,feldspar > 5% and feldspar < 25% and feldspar > lithic,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+1,31,lithic > 5% and lithic < 25% and feldspar < lithic,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+1,32,feldspar > 25% and feldspar > lithic,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+2,33,quartz < 95% and feldspar > lithic,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+2,34,quartz < 95% and feldspar < lithic,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification
+2,35,quartz > 95%,"Pettijohn, F.J., 1975. Sedimentary rocks, 3rd edition. Harper collins, 628 pp.",,Pettijohn's classification

@@ -1,0 +1,5 @@
+stid,ttid,rule,classfion
+206,51,B/A > 2/3 and C/B > 2/3,Sphericity  
+206,52,B/A < 2/3,Sphericity  
+206,53,B/A > 2/3 and C/B < 2/3,Sphericity  
+206,54,B/A < 2/3 and C/B < 2/3,Sphericity  
